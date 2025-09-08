@@ -1,11 +1,19 @@
-iSerie = 1
-iFatorial = 0
+n = int(input("Digite um número inteiro: "))
 
-while iSerie <= 10:
-    iFatorial = iSerie - 1
-    totalFatorial = 0
-    while iFatorial != 0:
-        totalFatorial = totalFatorial + (iSerie * iFatorial)
-        iFatorial = iFatorial - 1
-    iSerie = iSerie + 1
-print(totalFatorial)
+i = 2
+
+#Calcula o fatorial
+def calculaFatorial(valor):
+    results = 0
+
+    if results == 0:
+        results = valor * i
+    else:
+        results = results * i   
+    return results
+#
+
+while i <= n:
+    total = 1 + (1/calculaFatorial(i))
+    print("1 + 1 /", i, " = ", total)
+    i = i + 1

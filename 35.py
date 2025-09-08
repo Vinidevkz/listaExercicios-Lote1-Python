@@ -1,5 +1,5 @@
-n1 = 3
-n2 = 8
+n1 = 1
+n2 = 6
 
 if n1 > n2:
     maiorNumero = n1
